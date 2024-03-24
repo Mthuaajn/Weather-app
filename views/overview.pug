@@ -1,0 +1,31 @@
+extends base
+
+block content 
+    .content
+    .weather-info
+        div.weather-details
+            div.weather-desc
+                h5=` City: ${current.location.name} (${current.location.localtime})`
+                p= `Wind: ${current.current.wind_kph} km/h`
+                p= `Humidity: ${current.current.humidity}%`
+                p= `Temperature: ${current.current.temp_c}°C` 
+            div.weather-image
+                img(src=`${current.current.condition.icon}` alt="Weather Image")
+            div.save-button
+                button.btn.btn-primary.btn-current(type="button" style="background-color:gray") Save        
+    .forecast  
+        h2 4-Days-forecast
+        div.container       
+            each day in forecast.forecast.forecastday
+                div.forecast-card
+                    div.forecast-date
+                        h5= day.date
+                    div.forecast-image
+                        img(src=`${day.day.condition.icon}` alt="Weather Image")
+                    div.forecast-details
+                        p= `Wind: ${day.day.maxwind_kph} km/h`
+                        p= `Humidity: ${day.day.avghumidity}%`
+                        p= `Temperature: ${day.day.avgtemp_c}°C`
+    .history 
+        h2 Weather History
+        div.container 

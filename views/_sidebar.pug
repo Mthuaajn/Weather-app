@@ -1,0 +1,17 @@
+.sidebar
+    form.form-search(action="/search" method="POST")
+        .form-group
+        label(for="city-input") Enter a city name
+        input#city-input.form-control(type="text" name="QueryType" placeholder="E.g, New York, London, Tokyo")
+        .form-group
+        button.btn.btn-primary(type="submit") Search
+        hr
+    a(href="/current-location")
+        button.btn.btn-secondary(type="button") Use Current Location
+    hr
+    form.form-email(action="/subscribed-email",method="POST")
+        .form-group
+        label(for="email-input") Receive daily weather updates
+        input#email-input.form-control(type="email" name="email" placeholder="E.g, example@example.com")
+        .form-group
+            button.btn.btn-primary(type="submit") Subscribe

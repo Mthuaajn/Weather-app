@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="text-center my-4" style="background-color: #5372f0">
+        <h1>Weather App Dashboard</h1>
+      </header>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter city name..."
+              value="New York" />
+            <div class="input-group-append">
+              <button class="btn btn-primary" type="button">Search</button>
+              <button class="btn btn-secondary" type="button">Clear</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Current Weather</h5>
+                <p class="card-text">Temperature: 15°C</p>
+                <p class="card-text">Weather: Sunny</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 mb-3">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Day 1</h5>
+                  <p class="card-text">Temperature: 14°C</p>
+                  <p class="card-text">Weather: Cloudy</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 mb-3">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Day 2</h5>
+                  <p class="card-text">Temperature: 16°C</p>
+                  <p class="card-text">Weather: Rainy</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 mb-3">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Day 3</h5>
+                  <p class="card-text">Temperature: 18°C</p>
+                  <p class="card-text">Weather: Sunny</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 mb-3">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Day 4</h5>
+                  <p class="card-text">Temperature: 19°C</p>
+                  <p class="card-text">Weather: Partly Cloudy</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
